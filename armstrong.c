@@ -1,28 +1,7 @@
-//lookup table, lookup[3][4] = 4^4 - 3^4
-//lookup[2] [3] = 3^3 - 2^3
-//lookup[9][5] = 0 - 9^5
-
-
-len = 0;
-sum = 0;
-while (N< 1 billion)
-{
-index = 0;
- 
- 
- do
- {
-  sum += lookup[number[index]][len];
- } while ((++number[index] == 10) && ((number[index] = 0) || 1) && ++index > len && ++len);
- 
- if (N == sum) print;
-N++;
-}
-
-//=======================================================
 #include <iostream>
 
 using namespace std;
+
 
 long tableLookup[10][10];
 
@@ -105,3 +84,4 @@ main ()
     }
   return 0;
 }
+
